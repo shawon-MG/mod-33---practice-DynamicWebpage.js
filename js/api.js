@@ -10,6 +10,7 @@ function usersName (showData){
     const ul =  document.getElementById('user-ul-name');
     for (const user of showData){
         const li = document.createElement('li');
+        li.classList.add('name-list-style');
         li.innerHTML = `
             user : ${user.name}
         `;
@@ -29,6 +30,7 @@ function userEmail (showData){
     const ul = document.getElementById('user-ul-email');
     for (const user of showData){
         const li = document.createElement('li')
+        li.classList.add('email-list-style');
         li.innerHTML = `
             userEmail : ${user.email}
         `;
